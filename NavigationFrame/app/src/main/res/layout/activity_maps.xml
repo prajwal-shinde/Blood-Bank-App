@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:context="com.homeandlearn.ken.navigationframe.POJO.MapsActivity"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="68dp">
+
+    </fragment>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_alignBaseline="@+id/text_search"
+        android:layout_alignBottom="@+id/text_search"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#FF0000"
+        android:onClick="findLocation"
+        android:text="Search"
+        android:textColor="#FFF"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/text_search"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="364dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="11dp"
+        android:layout_toLeftOf="@+id/search_button"
+        android:layout_toStartOf="@+id/search_button"
+        android:background="@drawable/white_border"
+        android:ems="10"
+        android:hint="  Enter your Location"
+        android:imeOptions="actionSearch"
+        android:inputType="textPersonName"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="@+id/map"
+        map:layout_constraintStart_toStartOf="@+id/map"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.015" />
+
+    <Button
+        android:id="@+id/reset_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="57dp"
+        android:background="#FF0000"
+        android:text="Reset"
+        android:textColor="#FFF"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <Button
+        android:id="@+id/bt_zmout"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bt_zin"
+        android:layout_marginTop="68dp"
+        android:background="#FF0000"
+        android:text="-"
+        android:textColor="#FFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bt_zin"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/search_button"
+        android:layout_marginTop="15dp"
+        android:background="#FF0000"
+        android:text="+"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/map_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reset_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
+        android:background="#FF0000"
+        android:text="Map Type"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/norm_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/map_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:background="@color/colorPrimary"
+        android:text="Normal Type"
+        android:textColor="#FFFF" />
+
+</RelativeLayout>
+
+

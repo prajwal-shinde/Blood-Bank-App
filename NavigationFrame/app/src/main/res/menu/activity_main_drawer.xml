@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_location_searching_black_24dp"
+            android:title="Location Search" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="Help" />
+    </group>
+
+    <item android:title="Services">
+        <menu>
+            <item
+                android:id="@+id/nav_db"
+                android:icon="@drawable/donateblood"
+                android:title="Donate Blood" />
+            <item
+                android:id="@+id/nav_Rb"
+                android:icon="@drawable/ambulance"
+                android:title="Recieve Blood" />
+            <item
+                android:id="@+id/nav_rb"
+                android:icon="@drawable/ic_favorite_black_24dp"
+                android:title="Request Blood"/>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share"/>
+            <item
+                android:id="@+id/nav_feed"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:title="FeedBack"/>
+        </menu>
+    </item>
+
+</menu>
